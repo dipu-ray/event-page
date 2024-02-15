@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Inria+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100%;
+    background-color: #ff99ad;
+    background-image: 
+        radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 96%, hsla(294, 82%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 5%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 94% 56%, hsla(352, 76%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 66% 76%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 7% 2%, hsla(32, 97%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 49% 76%, hsla(59, 86%, 79%, 1) 0px, transparent 50%);
+    padding: 2% 5% 0;
+}
+
+header .nav-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.left-navbar ul {
+    display: flex;
+    gap: 10%;
+    margin-top: 4%;
+}
+
+.nav-links {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: all .50s ease;
+}
+
+.nav-links:hover::after {
+    width: 50%;
+}
+
+.middle-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-navbar .logo {
+    font-family: "Barriecito", system-ui;
+    font-size: 3vw;
+}
+
+.right-navbar ul {
+    display: flex;
+    gap: 10%;
+    justify-content: end;
+    margin-top: 4%;
+    font-weight: 500;
+}
+
+.right-navbar ul .special-nav-link {
+    border: 3px solid #000;
+    padding: 10px 30px;
+    transition: all .50s ease;
+}
+
+.right-navbar ul .special-nav-link:hover {
+    background-color: #000;
+    color: #ff99ad;
+}
+
+header .header-main-content {
+    margin-top: 5%;
+}
+
+.header-main-content .highlight h1 {
+    font-family: "Barriecito", system-ui;
+    text-align: center;
+    font-size: 7.9vw;
+    font-weight: 600;
+}
+
+.highlight h1 .color {
+    font-family: "Barriecito", system-ui;
+    color: #2e71e5;
+}
+
+.contest-about {
+    display: flex;
+}
+
+.contest-about .inner-contest-content {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.inner-contest-content p {
+    margin-bottom: 35px;
+}
+
+.paragraph {
+    color: #333;
+}
+
+.btn {
+    background-color: #2e71e5;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.btn i {
+    font-size: 22px;
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
+
+.contest-about .inner-contest-img {
+    width: 50%;
+}
+
+.contest-about .inner-contest-img img {
+    width: 100%;
+}
+
+.inner-contest-content .blank-content {
+    position: relative;
+    left: -11%;
+    height: 150px;
+    width: 120%;
+    background-color: #33333381;
+    margin: 10% 0;
+}
+
+.inner-contest-content .space-contest-content {
+    position: relative;
+    left: -11%;
+    height: 150px;
+    width: 120%;
+    background-color: #33333381;
+    padding: 9% 10%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.value {
+    color: #ff99ad;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content {
+    letter-spacing: .2rem;
+}
+
+main {
+    height: 100%;
+    background-color: #ff99ad;
+    background-image:
+        radial-gradient(at 66% 76%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 7% 2%, hsla(32, 97%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 49% 76%, hsla(59, 86%, 79%, 1) 0px, transparent 50%), 
+        radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 96%, hsla(294, 82%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 5%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 94% 56%, hsla(352, 76%, 61%, 1) 0px, transparent 50%);
+    padding: 10% 5%;
+}
+
+.inner-explore {
+    display: flex;
+}
+
+.inner-explore .explore-img {
+    width: 60%;
+}
+
+.inner-explore .explore-img img {
+    width: 100%;
+}
+
+.inner-explore .explore-content {
+    width: 40%;
+    text-align: right;
+}
+
+.heading-1 {
+    font-family: "Barriecito", system-ui;
+    font-size: 5vw;
+}
+
+.explore-content p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 30%;
+}
+
+.horizontal-container {
+    background: linear-gradient(to left, gold, goldenrod);
+    padding: 3% 0;
+    position: absolute;
+    left: 0;
+    margin-top: 75px;
+}
+
+.inner-horizontal {
+    display: flex;
+}
+
+.horizontal-content {
+    width: 25%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.horizontal-content img {
+    width: 25%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.horizontal-content h1 {
+    font-size: 2vw;
+}
+
+.programming-container {
+    margin-top: 45vh;
+}
+
+.programming-container h1 {
+    text-align: center;
+}
+
+.inner-programming {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 30px;
+}
+
+.programming-content {
+    width: 30%;
+    background-color: #ff99ad51;
+    padding: 40px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px #333;
+    transition: all .30s ease;
+}
+
+.programming-content img {
+    width: 100%;
+    aspect-ratio: 3/2.5;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.programming-content h4 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.programming-content h6 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.programming-content a {
+    background-color: #2e71e5;
+    color: #000;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.programming-content a:hover {
+    background-color: #0054e6;
+}
+
+.date-seats {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collaborate-container {
+    margin-top: 150px;
+}
+
+.collaborate-container h1 {
+    text-align: center;
+}
+
+.inner-collaborate {
+    margin-top: 50px;
+}
+
+.collaborate-content {
+    display: flex;
+    gap: 12%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.collaborate-content i {
+    font-size: 100px;
+}
+
+.join-events-container {
+    margin-top: 150px;
+}
+
+.join-events-container h1 {
+    text-align: center;
+}
+
+.inner-join-events {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+form .input {
+    height: 50px;
+    width: 20%;
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #2e71e5;
+    color: #000;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+form .input:focus {
+    background-color: #2e71e5a1;
+}
+
+form .wide {
+    width: 35%;
+}
+
+::placeholder {
+    color: #000;
+}
+
+form .input-btn {
+    background-color: #0054e6;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+form .input-btn:hover {
+    background-color: #0054e68b;
+}
+
+footer {
+    height: 100%;
+    background-color: #ff99ad;
+    background-image: 
+        radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 21% 96%, hsla(294, 82%, 79%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 5%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 94% 56%, hsla(352, 76%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 66% 76%, rgb(46, 113, 229) 0px, transparent 50%),
+        radial-gradient(at 7% 2%, hsla(32, 97%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 49% 76%, hsla(59, 86%, 79%, 1) 0px, transparent 50%);
+    padding: 10% 5%;
+    text-align: center;
+}
+
+.footer-navbar ul {
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    transition: all .50s ease;
+}
+
+.footer-icons i:hover {
+    color: #2e71e5;
+}
+
+
+
+/* RESPONSIVE WEB DESIGN - MEDIA QUERIES */
+@media screen and (max-width: 1250px) {
+    .left-navbar ul {
+        margin-top: 3%;
+    }
+
+    .right-navbar ul {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .date-seats {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .middle-navbar .logo {
+        display: none;
+    }
+    
+    .left-navbar ul {
+        margin-top: 2%;
+    }
+
+    .right-navbar ul {
+        margin-top: 2%;
+    }
+
+    .collaborate-content {
+        gap: 8%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .programming-content a {
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+
+    .date-seats {
+        font-size: 12px;
+    }
+
+    form .input {
+        height: 35px;
+    }
+
+    form .input-btn {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .inner-programming {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .programming-content {
+        width: 60%;
+        padding: 80px 80px;
+    }
+
+    .programming-content h4 {
+        font-size: 2.5vw;
+    }
+
+    .programming-content h6 {
+        font-size: 2.2vw;
+    }
+
+    .programming-content a {
+        padding: 5px 25px;
+        font-size: 2vw;
+    }
+
+    .date-seats {
+        flex-direction: row;
+        font-size: 2vw;
+    }
+
+    .collaborate-content {
+        gap: 5%;
+    }
+    
+    .collaborate-content i {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .nav-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .left-navbar ul {
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+    }
+
+    .right-navbar ul {
+        gap: 5%;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    
+    .right-navbar ul .special-nav-link {
+        border: 3px solid #000;
+        padding: 5px 15px;
+    }
+
+    .inner-contest-content .blank-content {
+        height: 100px;
+    }
+    
+    .inner-contest-content .space-contest-content {
+        height: 100px;
+        padding: 10px 50px;
+    }
+
+    .value {
+        font-size: 30px;
+    }
+    
+    .content {
+        letter-spacing: .1rem;
+        font-size: 10px;
+    }
+
+    .inner-explore {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .inner-explore .explore-img {
+        width: 100%;
+    }
+    
+    .inner-explore .explore-img img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    
+    .inner-explore .explore-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .explore-content p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding-left: 0;
+    }
+
+    .programming-content h4 {
+        font-size: 2.2vw;
+    }
+
+    .programming-content h6 {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header .header-main-content {
+        margin-top: 15%;
+    }
+
+    .contest-about {    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contest-about .inner-contest-content {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .inner-contest-content .blank-content {
+        width: 116.5%;
+    }
+
+    .inner-contest-content .space-contest-content {
+        width: 116.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .inner-contest-img {
+        display: none;
+    }
+
+    .programming-content {
+        width: 60%;
+        padding: 40px 40px;
+    }
+
+    form .input {
+        height: 30px;
+    }
+
+    form .input-btn {
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .programming-content {
+        width: 90%;
+        padding: 60px 60px;
+    }
+
+    .programming-content h4 {
+        font-size: 3.5vw;
+    }
+
+    .programming-content h6 {
+        font-size: 3.2vw;
+    }
+
+    .programming-content a {
+        font-size: 3vw;
+    }
+
+    .date-seats {
+        font-size: 3vw;
+    }
+
+    .collaborate-content {
+        gap: 5%;
+    }
+    
+    .collaborate-content i {
+        font-size: 50px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    form .input {
+        height: 40px;
+        width: 70%;
+    }
+    
+    form .wide {
+        width: 70%;
+    }
+
+    form .input-btn {
+        height: 40px;
+        width: 70%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .paragraph {
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    .explore-content p {
+        text-align: justify;
+        padding-left: 0;
+        padding: 0 20px;
+    }
+
+    .programming-container {
+        margin-top: 25vh;
+    }
+
+    .programming-content {
+        width: 85%;
+        padding: 50px 40px;
+    }
+
+    .collaborate-container {
+        margin-top: 15vh;
+    }
+
+    .inner-collaborate {
+        margin-top: 15px;
+    }
+
+    .collaborate-content {
+        gap: 3%;
+        margin-top: 15px;
+    }
+    
+    .collaborate-content i {
+        font-size: 50px;
+    }
+
+    .join-events-container {
+        margin-top: 10vh;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    form .input {
+        height: 35px;
+        width: 80%;
+    }
+    
+    form .wide {
+        width: 80%;
+    }
+
+    form .input-btn {
+        height: 35px;
+        width: 80%;
+    }
+}
